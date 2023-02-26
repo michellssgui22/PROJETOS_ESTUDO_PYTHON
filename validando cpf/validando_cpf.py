@@ -1,8 +1,6 @@
 cpf = input("Informe o CPF para validação: ")
 
-cpf= cpf.replace('.', '')
-cpf= cpf.replace('-', '')
-cpf= cpf.replace(',', '')
+cpf= cpf.replace('.', '').replace('-', '').replace(',', '')
 #cpf= cpf_clear[::-1]
 cpf_clear = cpf[:9]
 cpf_clear 
