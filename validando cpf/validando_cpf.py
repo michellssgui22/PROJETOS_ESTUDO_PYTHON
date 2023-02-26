@@ -1,6 +1,12 @@
+import re
+
 cpf = input("Informe o CPF para validação: ")
 
-cpf= cpf.replace('.', '').replace('-', '').replace(',', '')
+cpf = re.sub(
+    r'[^0-9]',
+    '',
+    str(cpf)
+)
 #cpf= cpf_clear[::-1]
 cpf_clear = cpf[:9]
 cpf_clear 
